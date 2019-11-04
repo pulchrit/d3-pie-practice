@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import * as d3 from 'd3';
 import PieClass from "./PieClass";
 import PieHooks from './PieHooks';
-import PieSVG from './PieSVG';
 import './App.css';
 
 const App = () => {
@@ -41,23 +40,10 @@ const App = () => {
                 <PieHooks
                     data={data}
                     width={200}
-                    width={200}
                     height={200}
                     innerRadius={60}
                     outerRadius={100}
                 />
-            </div>
-            
-            <div>
-                <span className='label'>SVG Elements</span>
-               {/*  <PieSVG
-                    data={data}
-                    width={200}
-                    width={200}
-                    height={200}
-                    innerRadius={60}
-                    outerRadius={100} 
-                />  */}
             </div>
         </div>
     );

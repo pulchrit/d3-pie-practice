@@ -46,7 +46,7 @@ const Pie = ({ data, innerRadius, outerRadius, width, height }) => {
             .style('font-size', 10)
             .text(d => format(d.value));
 
-        }, [ data ]
+        }, [ data, colors, createArc, createPie, format ]
     );
 
     return (
